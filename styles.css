@@ -1,0 +1,122 @@
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #a8edea 0%, #fed6e3 100%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+  }
+  
+  .container {
+    background-color: white;
+    width: 400px;
+    padding: 20px 40px;
+    border-radius: 30px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    position: relative;
+    text-align: center;
+  }
+  
+  .container::before {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 120%;
+    height: 40px;
+    background: rgba(255, 255, 255, 0.4);
+    filter: blur(20px);
+    z-index: -1;
+    border-radius: 50%;
+  }
+  
+  h2 {
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .input-group,
+  .skills-input-group {
+    margin-bottom: 20px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    text-align: left;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="file"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+  }
+  
+  input[type="file"] {
+    padding: 8px;
+  }
+  
+  input[type="button"],
+  button {
+    padding: 12px;
+    width: 100%;
+    background-color: #4caf50;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type="button"]:hover,
+  button:hover {
+    background-color: #388e3c;
+  }
+  
+  #profile-picture-preview {
+    display: block;
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 50%;
+    margin: 10px auto;
+    border: 3px solid #4caf50;
+  }
+  
+  #toggle-skills-btn {
+    background-color: #008cba;
+    margin-top: 10px;
+  }
+  
+  #toggle-skills-btn:hover {
+    background-color: #007bb5;
+  }
+  
+  .hidden {
+    display: none;
+  }
+  /* Existing styles */
+
+.generate-button-group {
+    margin-top: 20px;
+  }
+  
+  #generate-btn {
+    background-color: #f39c12;
+  }
+  
+  #generate-btn:hover {
+    background-color: #e67e22;
+  }
+  
+  
